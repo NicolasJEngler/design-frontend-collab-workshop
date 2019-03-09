@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Design + front-end: collaboration without compromising</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<img class="corner-pattern" src="images/corner-pattern.svg" alt="&lt;/&gt;" title="&lt;/&gt;">
+
+			<div class="slides">
+				<section class="slides__slide slides__slide--initial">
+					<h1>Design + front-end:<br> collaboration without compromising</h1>
+					<h2>How can <strong>designers and front-end developers</strong> understand each other's work to improve both collaboration and implementation of our products.</h2>
+
+					<pre class="width-100 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
+:root {
+	--name:    'Nicolás Joel Engler';
+	--job:     'Front-end Developer';
+	--company: 'Rockstar Coders';
+	--twitter: '@NicolasJEngler';
+	--email:   'hi@nicolasjengler.com.ar';
+}
+					</code></pre>
+
+					<aside class="notes">
+						In this workshop we're going to go through the advantages and caveats of implementing UI/UX designs on the front-end side of things while respecting the creative proposals and direction of designers.
+					</aside>
+				</section>
+
+				<section class="slides__slide">
+					<h1>What do designers and front-developers do similarly?</h1>
+
+					<p>To begin this workshop we need to understand what we, designers and front-end devs do similarly. This exercise will help us get the bigger picture when it comes to going through workflows that while different at first glance have a lot in common.</p>
+					
+					<img src="images/teamwork.gif"_alt="Teamwork!" title="Teamwork!">
+
+					<aside class="notes">
+						The main idea is to understand what first-level limitations we have and how to break through those limitations to go through what I call n-level limitations with the resources we have.
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
