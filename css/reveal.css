@@ -1311,13 +1311,13 @@ body {
       font-family: "PT Mono", monospace;
       font-weight: normal;
       text-transform: initial;
-      font-size: 1.25em;
+      font-size: 1.125em;
       line-height: 1.2;
       margin: 0 0 60px;
       color: #ffffff;
       margin-left: auto;
       margin-right: auto;
-      max-width: 768px; }
+      max-width: 100%; }
     .reveal .slides__slide--initial h2 {
       font-family: "PT Mono", monospace;
       font-weight: normal;
