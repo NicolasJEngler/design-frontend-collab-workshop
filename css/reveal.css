@@ -1435,6 +1435,30 @@ body {
       border: 2px solid blue; }
       .reveal .slides__slide .selectors-level-4 .case-insensitive-flag:not(:last-of-type) {
         margin-bottom: 30px; }
+    .reveal .slides__slide code {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2px 5px;
+      border-radius: 5px; }
+    .reveal .slides__slide .footnote {
+      margin-top: 30px; }
+    .reveal .slides__slide .code-design {
+      margin-top: 50px;
+      width: calc(100% + 120px);
+      position: relative;
+      left: 50%;
+      transform: translate3d(-50%, 0px, 0px); }
+      .reveal .slides__slide .code-design-shot {
+        margin: 0 15px;
+        display: inline-block;
+        vertical-align: middle; }
+      .reveal .slides__slide .code-design-arrow {
+        margin: 0;
+        vertical-align: middle;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        box-shadow: none;
+        outline: 0; }
 
 .text-left {
   text-align: left !important; }

@@ -379,6 +379,40 @@
           }
         }
       }
+
+      code {
+        background: rgba(white, .15);
+        padding: 2px 5px;
+        border-radius: 5px;
+      }
+
+      .footnote {
+        margin-top: 30px;
+      }
+
+      .code-design {
+        margin-top: 50px;
+        width: calc(100% + 120px);
+        position: relative;
+        left: 50%;
+        transform: translate3d(-50%, 0px, 0px);
+
+        &-shot {
+          margin: 0 15px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        &-arrow {
+          margin: 0;
+          vertical-align: middle;
+          border: 0;
+          width: 32px;
+          height: 32px;
+          box-shadow: none;
+          outline: 0;
+        }
+      }
     }
   }
 }

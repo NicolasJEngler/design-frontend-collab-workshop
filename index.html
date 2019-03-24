@@ -43,144 +43,225 @@
 }
         </code></pre>
         
-        <aside class="notes">
-          In this workshop we're going to go through the advantages and caveats of implementing UI/UX designs on the front-end side of things while respecting the creative proposals and direction of designers.
-        </aside>
-      </section>
+      <aside class="notes">
+        In this workshop we're going to go through the advantages and caveats of implementing UI/UX designs on the front-end side of things while respecting the creative proposals and direction of designers.
+      </aside>
+    </section>
       
-      <section class="slides__slide">
-        <h1>Intro: designers and front-end developers,
-          brothers and sisters separated at birth</h1>
+    <section class="slides__slide">
+      <h1>Designers and front-end devs:<br>
+          siblings separated at birth</h1>
           
-          <p>How can designers and front-end developers understand each other's work,
-            comprehend what's similar and what's totally different, and use that
-            knowledge to get collaboration working like a well-oiled machine rather than
-            pulling each other's hair off</p>
-            
-            <img src="images/intro.gif"_alt="Teamwork!" title="Teamwork!" width="290">
-            
-            <aside class="notes">
-              You don't have any notes.
-            </aside>
-          </section>
-          <section class="slides__slide">
-            <h1>Html: HyperText Markup Language or
-              How To Make Little websites</h1>
-              <p>
-                <ul>
-                  <li>
-                    How can designers think elements and symbols as
-                    HTML elements
-                  </li>
-                  <li>
-                    Where do I get official and up-to-date information
-                    about HTML?
-                  </li>
-                  <li>
-                    Why don't we just use GUI tools to create websites
-                    and be done with it?
-                  </li>
-                  <li>
-                    What's the added workload to create dynamic
-                    websites rather than just editing an HTML document?
-                  </li>
-                </ul>
-              </p>
+      <p>How can designers and front-end developers understand each other's work,
+        comprehend what's similar and what's totally different, and later use that
+        knowledge to get collaboration working like a well-oiled machine rather than
+        pulling each other's hair off</p>
+        
+      <img src="images/intro.gif"_alt="Teamwork!" title="Teamwork!" width="400">
+      
+      <aside class="notes">
+        Similar: Both profiles work on canvases. Both deal with color palettes, typography, etcetera. Both work with boxes.
+        Different: Designers are free to work outside the box both figuratively and literally, they're able to draw free-hand shapes and make other elements adapt to it, while developers face what I call n-level limitation when implementing this sort of designs. Also, designers usually work on fixed containers while developers need to adapt designs to almost any size imaginable given the amount of device fragmentation around the world.
+      </aside>
+    </section>
 
-              <img src="images/html.gif"_alt="Teamwork!" title="Teamwork!"width="290">
-              
-              <aside class="notes">
-                You don't have any notes.
-              </aside>
-            </section>
-            <section class="slides__slide">
-              <h1>Css: Cascading Style Sheets or Code Super Styles</h1>
-                <p>
-                  <ul>
-                    <li>
-                      What do developers do with CSS and what are its limitations? An intro
-                      to n-level limitations
-                    </li>
-                    <li>
-                      Does CSS bore similarities with the same style properties designers use
-                      on their elements/symbols at apps like Figma/Sketch/InVision Studio?
-                    </li>
-                    <li>
-                      Pragmatism vs pixel-perfect implementations
-                    </li>
-                    <li>
-                      New properties and cutting-edge technologies, their support, how to
-                      degrade gracefully on legacy browsers and avoiding bloat by polyfill
-                    </li>
-                  </ul>
-                </p>
-  
-               <img src="images/css.gif"_alt="Teamwork!" title="Teamwork!" width="290">
-              
-                <aside class="notes">
-                You don't have any notes.
-              </aside>
-            </section>
-            <section class="slides__slide">
-              <h1>js: JavaScript or Just Shake things up</h1>
-                <p>
-                  <ul>
-                    <li>
-                      What does exactly JavaScript do? Why was it created?
-                    </li>
-                    <li>
-                      Common interactions: modals, animations, transitions, state-changes
-                    </li>
-                    <li>
-                      Execution and task automatization: minification, concatenation, etcetera
-                    </li>
-                    <li>
-                      Common tools: Gulp, Grunt, WebPack, Bower, Yarn, NPM, etcetera
-                    </li>
-                    <li>
-                      APIs and libraries: level of complexity, intents, and requirements
-                    </li>
-                    <li>
-                      Eye-candy for sites: GSAP, Mo.js, WOW.js, etcetera
-                    </li>
-                  </ul>
-                </p>
-  
-                <img src="images/js.gif"_alt="Teamwork!" title="Teamwork!" width="290">
-                
-                <aside class="notes">
-                  You don't have any notes.
-              </aside>
-            </section>
-            <section class="slides__slide">
-              <h2>Question time!</h2>
-              <h1>Ask Whatever you want!</h1>
-                <img src="images/question.gif"_alt="Teamwork!" title="Teamwork!">
-                
-                <aside class="notes">
-                  You don't have any notes.
-              </aside>
-            </section>
-          </div>
-        </div>
+    <section class="slides__slide">
+      <h1>HTML: HyperText Markup Language or
+        How To Make Little websites</h1>
+
+      <img src="images/html.gif"_alt="Teamwork!" title="Teamwork!"width="400">
+      
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>HTML: components and symbols<br> as tags</h1>
+
+      <p>HTML tags can be thought of as elements and symbols in a design app like Sketch or Figma.</p>
+
+      <div class="code-design">
+        <img class="code-design-shot" src="images/html-as-symbols-code.png" width="445">
+        <img class="code-design-arrow" src="images/arrow.png">
+        <img class="code-design-shot" src="images/html-as-symbols-design.png" width="400">
+      </div>
+
+      <small class="footnote"><strong>Note:</strong> Go to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a> for more documentation on HTML.</small>
+      
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>HTML: official and up-to-date information</h1>
+
+      <p>Do front-end developers know each and every single HTML tag? Absolutely NOT. Front-end development involves a fair amount of googling. HTML is vast and wide, attempting to remember each of its tags is useless.</p>
+
+      <p>Although you will most likely find whatever you need on any site that references HTML, "official" channels are recommended:</p>
+
+      <ul class="mt-30">
+        <li>W3C HTML:<br> <a href="https://www.w3.org/html/">https://www.w3.org/html/</a></li>
+        <li>Mozilla Developer Network:<br> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></li>
+      </ul>
+
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>HTML: playtime!</h1>
+
+      <p>Go to <a href="https://jsbin.com/">https://jsbin.com/</a> and place a heading of hierarchy 1 and a paragraph inside the <code>body</code> tag. Once you're done, don't close your browser tab.</p>
+
+      <p>Use the previously mentioned sites in order to get documentation on how to write a level-1 hierarchy heading and a paragraph.</p>
+
+      <ul class="mt-30">
+        <li>W3C HTML:<br> <a href="https://www.w3.org/html/">https://www.w3.org/html/</a></li>
+        <li>Mozilla Developer Network:<br> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></li>
+      </ul>
+
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>HTML: playtime!</h1>
+
+      <p>Below your heading and paragraph, add an <code>img</code> tag and link any picture you like.</p>
+
+      <p>Use the previously mentioned sites in order to get documentation on what the syntax of an <code>img</code> tag is like.</p>
+
+      <ul class="mt-30">
+        <li>W3C HTML:<br> <a href="https://www.w3.org/html/">https://www.w3.org/html/</a></li>
+        <li>Mozilla Developer Network:<br> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></li>
+      </ul>
+
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>HTML: GUI-based tools vs coding</h1>
+
+      <p>Why coding when we already have apps and tools with graphical user interfaces to create websites?</p>
+
+      <p><strong>Short answer:</strong> it depends on what you're looking for. GUI-based tools are great for speedy projects with low-level customization, while coding allows for granular control of assets, styles and interactions.</p>
+
+      <img class="mt-30" src="images/gui-tools.gif" width="400">
+
+      <aside class="notes">
+        Some sites and apps do it great, like Webflow for example. Other offer a medium solution, like Squarespace. But what happens when a designer wants to add parallax scrolling with differents levels of speed? Or what happens when the designer would like to anchor content on scroll? What about scroll-based animations? Modals? Popovers? Most of these additions are either buggy or complicated to achieve on GUI-based tools, because HTML was never designed to be written with a GUI, it was the other way around.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>HTML: dynamic vs static website</h1>
+
+      <p>What's the added workload to create dynamic websites rather than just editing an HTML document?</p>
+
+      <p><strong>(Not so) short answer:</strong> static websites are pretty straight forward, write some code, check it out in a browser and watch the result, the caveat is that in order to update its content you'll have to do it manually by editing the HTML document. On the other side of the spectrum, dynamic websites add a layer of complexity that requires several extra steps with the advantage of being able to edit the site through some kind of interface.</p>
+
+      <img class="mt-30" src="images/decisions.gif" width="400">
+
+      <aside class="notes">
+        For dynamic sites: does the webserver supports PHP or any other back-end language? Will some framework or CMS like WordPress be used? Is the environment secure? Is the front-end developer capable of wiring the site's HTML/CSS/JS into the back-end code of the site?
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>CSS: Cascading Style Sheets or Code Super Styles</h1>
+      <p>
+        <ul>
+          <li>
+            What do developers do with CSS and what are its limitations? An intro
+            to n-level limitations
+          </li>
+          <li>
+            Does CSS bore similarities with the same style properties designers use
+            on their elements/symbols at apps like Figma/Sketch/InVision Studio?
+          </li>
+          <li>
+            Pragmatism vs pixel-perfect implementations
+          </li>
+          <li>
+            New properties and cutting-edge technologies, their support, how to
+            degrade gracefully on legacy browsers and avoiding bloat by polyfill
+          </li>
+        </ul>
+      </p>
+
+      <img src="images/css.gif"_alt="Teamwork!" title="Teamwork!" width="290">
+      
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h1>JS: JavaScript or Just Shake things up</h1>
+      <p>
+        <ul>
+          <li>
+            What does exactly JavaScript do? Why was it created?
+          </li>
+          <li>
+            Common interactions: modals, animations, transitions, state-changes
+          </li>
+          <li>
+            Execution and task automatization: minification, concatenation, etcetera
+          </li>
+          <li>
+            Common tools: Gulp, Grunt, WebPack, Bower, Yarn, NPM, etcetera
+          </li>
+          <li>
+            APIs and libraries: level of complexity, intents, and requirements
+          </li>
+          <li>
+            Eye-candy for sites: GSAP, Mo.js, WOW.js, etcetera
+          </li>
+        </ul>
+      </p>
+
+      <img src="images/js.gif"_alt="Teamwork!" title="Teamwork!" width="290">
+          
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+
+    <section class="slides__slide">
+      <h2>Question time!</h2>
+      <h1>Ask Whatever you want!</h1>
+      <img src="images/question.gif"_alt="Teamwork!" title="Teamwork!">
+      
+      <aside class="notes">
+        You don't have any notes.
+      </aside>
+    </section>
+  </div>
         
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
-        
-        <script>
-          // More info https://github.com/hakimel/reveal.js#configuration
-          Reveal.initialize({
-            history: true,
-            
-            // More info https://github.com/hakimel/reveal.js#dependencies
-            dependencies: [
-            { src: 'plugin/markdown/marked.js' },
-            { src: 'plugin/markdown/markdown.js' },
-            { src: 'plugin/notes/notes.js', async: true },
-            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-            ]
-          });
-        </script>
-      </body>
-      </html>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      history: true,
+      
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+</html>
       
